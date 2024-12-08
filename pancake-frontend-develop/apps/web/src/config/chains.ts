@@ -52,6 +52,40 @@ const bsc = {
   },
 } satisfies Chain
 
+const platon = {
+  ...bsc_,
+  id: 210425,
+  name: 'Platon',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'LAT',
+    symbol: 'LAT',
+  },
+  rpcUrls: {
+    public: {
+      http: ['https://openapi2.platon.network/rpc'],
+    },
+    default: {
+      http: ['https://openapi2.platon.network/rpc'],
+    },
+  },
+  blockExplorers: {
+    default: {
+      name: 'PlatonScan',
+      url: 'https://scan.platon.network',
+      // 
+      apiUrl: '',
+    },
+  },
+  contracts: {
+    // 
+    multicall3: {
+      address: '0xca11bde05977b3631167028862be2a173976ca11',
+      blockCreated: 15921452,
+    },
+  },
+} satisfies Chain
+
 /**
  * Controls some L2 specific behavior, e.g. slippage tolerance, special UI behavior.
  * The expectation is that all of these networks have immediate transaction confirmation.
@@ -93,4 +127,5 @@ export const CHAINS: [Chain, ...Chain[]] = [
   opBNB,
   opBNBTestnet,
   scrollSepolia,
+  platon,
 ]

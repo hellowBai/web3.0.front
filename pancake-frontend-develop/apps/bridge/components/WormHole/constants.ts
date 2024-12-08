@@ -20,6 +20,7 @@ enum NETWORKS {
   ARBITRUM_ONE = 'arbitrum',
   BASE = 'base',
   APTOS = 'aptos',
+  PlatON = 'platon'
 }
 
 export const NETWORK_CONFIG: { [network in NETWORKS]: Network } = {
@@ -81,6 +82,13 @@ export const NETWORK_CONFIG: { [network in NETWORKS]: Network } = {
     mainnet: 'aptos',
     mainnetRpc: 'https://aptos-mainnet.nodereal.io/v1',
     testnetRpc: 'https://fullnode.devnet.aptoslabs.com/v1',
+  },
+  [NETWORKS.PlatON]: {
+    name: 'Platon',
+    testnet: 'platon',
+    mainnet: 'platon',
+    mainnetRpc: 'https://dipoleswap.exchange/swap',
+    testnetRpc: 'https://dipoleswap.exchange/swap',
   },
 }
 
