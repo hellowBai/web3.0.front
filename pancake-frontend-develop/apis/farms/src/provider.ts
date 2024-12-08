@@ -292,6 +292,8 @@ export const viemProviders = ({ chainId }: { chainId?: ChainId }): PublicClient 
       return opBNBClient
     case ChainId.OPBNB_TESTNET:
       return opBNBTestnetClient
+    case ChainId.PlatON:
+        return opBNBTestnetClient
     default:
       return bscClient
   }

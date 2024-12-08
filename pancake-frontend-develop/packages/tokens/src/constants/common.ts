@@ -357,6 +357,14 @@ export const USDC = {
     'USD Coin',
     'https://www.centre.io/usdc',
   ),
+  [ChainId.PlatON]: new ERC20Token(
+    ChainId.PlatON,
+    '0x036CbD53842c5426634e7929541eC2318f3dCF7e',
+    6,
+    'USDC',
+    'USD Coin',
+    'https://www.centre.io/usdc',
+  ),
 }
 
 export const USDT = {
@@ -517,4 +525,5 @@ export const STABLE_COIN = {
   [ChainId.SEPOLIA]: USDC[ChainId.SEPOLIA],
   [ChainId.ARBITRUM_SEPOLIA]: USDC[ChainId.ARBITRUM_SEPOLIA],
   [ChainId.BASE_SEPOLIA]: USDC[ChainId.BASE_SEPOLIA],
+  [ChainId.PlatON]: USDC[ChainId.PlatON],
 } satisfies Record<ChainId, ERC20Token>

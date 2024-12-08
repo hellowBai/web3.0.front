@@ -167,6 +167,14 @@ export const WETH9 = {
     'Wrapped Ether',
     'https://weth.io',
   ),
+  [ChainId.PlatON]: new ERC20Token(
+    ChainId.BASE_SEPOLIA,
+    '0x4200000000000000000000000000000000000006',
+    18,
+    'WETH',
+    'Wrapped Ether',
+    'https://weth.io',
+  ),
 }
 
 export const WBNB = {
@@ -210,6 +218,14 @@ export const WBNB = {
     'Wrapped BNB',
     'https://www.binance.org',
   ),
+  [ChainId.PlatON]: new ERC20Token(
+    ChainId.PlatON,
+    '0x4200000000000000000000000000000000000006',
+    18,
+    'WBNB',
+    'Wrapped BNB',
+    'https://www.binance.org',
+  ),
 }
 
 export const WNATIVE = {
@@ -233,6 +249,7 @@ export const WNATIVE = {
   [ChainId.SEPOLIA]: WETH9[ChainId.SEPOLIA],
   [ChainId.ARBITRUM_SEPOLIA]: WETH9[ChainId.ARBITRUM_SEPOLIA],
   [ChainId.BASE_SEPOLIA]: WETH9[ChainId.BASE_SEPOLIA],
+  [ChainId.PlatON]: WETH9[ChainId.BASE_SEPOLIA],
 } satisfies Record<ChainId, ERC20Token>
 
 const ETHER = { name: 'Ether', symbol: 'ETH', decimals: 18 } as const
@@ -284,6 +301,11 @@ export const NATIVE = {
     decimals: 18,
   },
   [ChainId.BASE_SEPOLIA]: {
+    name: 'Sepolia Ether',
+    symbol: 'ETH',
+    decimals: 18,
+  },
+  [ChainId.PlatON]: {
     name: 'Sepolia Ether',
     symbol: 'ETH',
     decimals: 18,
