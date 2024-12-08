@@ -101,5 +101,5 @@ export const defiLlamaChainNames: Record<ChainId, string> = {
   [ChainId.SEPOLIA]: '',
   [ChainId.ARBITRUM_SEPOLIA]: '',
   [ChainId.BASE_SEPOLIA]: '',
-  [ChainId.PlatON]: '',
+  [ChainId.PlatON]: 'PlatON',
 }

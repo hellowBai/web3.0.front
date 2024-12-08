@@ -34,4 +34,5 @@ export const SUPPORTED_CHAIN = [
   ChainId.POLYGON_ZKEVM,
   // ChainId.LINEA,
   // ChainId.OPBNB,
+  ChainId.PlatON,
 ]

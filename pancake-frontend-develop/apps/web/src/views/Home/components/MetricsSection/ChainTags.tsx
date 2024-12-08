@@ -144,6 +144,16 @@ const newsItems = [
     background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), #75A1FF',
     iconWidth: '20px',
   },
+  {
+    key: 'PlatOn',
+    component: (
+      <StyledChainIcon>
+        <BaseIcon />
+      </StyledChainIcon>
+    ),
+    background: 'linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%), #75A1FF',
+    iconWidth: '20px',
+  },
 ]
 
 export const ChainTags: React.FC = () => {
