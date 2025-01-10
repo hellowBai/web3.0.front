@@ -359,7 +359,7 @@ export const USDC = {
   ),
   [ChainId.PlatON]: new ERC20Token(
     ChainId.PlatON,
-    '0x036CbD53842c5426634e7929541eC2318f3dCF7e',
+    '0x0000000000000000000000000000000000000001',
     6,
     'USDC',
     'USD Coin',

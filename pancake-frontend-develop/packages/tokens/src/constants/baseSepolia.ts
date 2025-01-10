@@ -6,3 +6,8 @@ export const baseSepoliaTokens = {
   weth: WETH9[ChainId.BASE_SEPOLIA],
   usdc: USDC[ChainId.BASE_SEPOLIA],
 }
+
+export const basePlatonTokens = {
+  weth: WETH9[ChainId.PlatON],
+  usdc: USDC[ChainId.PlatON],
+}
