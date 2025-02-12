@@ -306,8 +306,8 @@ export const NATIVE = {
     decimals: 18,
   },
   [ChainId.PlatON]: {
-    name: 'Sepolia Ether',
-    symbol: 'ETH',
+    name: 'Lat',
+    symbol: 'Lat',
     decimals: 18,
   },
 } satisfies Record<
